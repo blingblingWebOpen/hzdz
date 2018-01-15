@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <title>杭州东站</title>
+    <link rel="stylesheet" href="{Stl.SiteUrl}/css/index1.css" />
+    <link rel="stylesheet" href="{Stl.SiteUrl}/css/lky_base1.css" />      
+
+
+  <script type="text/javascript" src="{Stl.SiteUrl}/js/qiehuan.js"></script>
+    <script type="text/javascript" src="{Stl.SiteUrl}/js/MSClass.js"></script>
+    <style>     
+    .Location{ position:fixed; left:50%; bottom:0%; _position:absolute; z-index:99999999;font-size: 12px;color: #333;}
+    .location1{ position:relative;}
+    .QR_Code{ position:absolute; left:495px; bottom:0px; }
+    .QR_Code_con{background:#fff; border:1px solid #ccc; }  
+    .QR_Code p{ text-align:center; padding-bottom:10px;}
+    .QR_Code a{ float:left; font-family:"Microsoft YaHei"; padding:2px 5px;color: #333;}
+    </style>
+    <script type="text/jscript" language="javascript"><!--导航二级菜单--> 
+  function na2over(){
+      document.getElementById('nav22').style.display='block';
+    
+    }
+  function na2out(){
+      document.getElementById('nav22').style.display='none';
+    
+    }
+  function na3over(){
+      document.getElementById('nav33').style.display='block';
+    }
+  function na3out(){
+      document.getElementById('nav33').style.display='none';
+    }
+  function na4over(){
+      document.getElementById('nav44').style.display='block';
+    }
+  function na4out(){
+      document.getElementById('nav44').style.display='none';
+    }
+  function na5over(){
+      document.getElementById('nav55').style.display='block';
+    }  
+  function na5out(){
+      document.getElementById('nav55').style.display='none';
+    }
+  function na6over(){
+      document.getElementById('nav66').style.display='block';
+    }
+  function na6out(){
+      document.getElementById('nav66').style.display='none';
+    }
+  function na7over(){
+      document.getElementById('nav77').style.display='block';
+    }
+  function na7out(){
+      document.getElementById('nav77').style.display='none';
+    }
+  function na8over(){
+      document.getElementById('nav88').style.display='block';
+    }
+  function na8out(){
+      document.getElementById('nav88').style.display='none';
+    }
+  function na9over(){
+      document.getElementById('nav99').style.display='block';
+    }
+  function na9out(){
+      document.getElementById('nav99').style.display='none';
+    }
+  
+</script>
+
+  </head>
+  <body>    
+    <div class="Location" id="loca">  
+      <div class="location1">
+      <div class="QR_Code">
+          <div class="QR_Code_con">
+                <img src="{Stl.SiteUrl}/images/Qr_code.jpg" width="127" height="127" />
+                <p>杭州东站微信公众号</p>
+            </div>
+            <a href="#" onmousedown="document.getElementById('loca').style.display='none';">关闭</a>
+        </div>
+      </div>    
+      </div>
+
+      <div id="top">   
+        <div class="logo">
+    <object>
+      <param name="wmode" value="transparent">
+      <embed src="{Stl.SiteUrl}/flash/top.swf" wmode="transparent" width="980" height="217" name="2" align=""></embed>
+    </object>  
+    <div class=" floatclear"></div>
+      </div>
+        
+     <stl:include file="@/include/header.htm"></stl:include>
+      </div>
+    <div id="fan">
+    <div id="main_left">
+      <!--left1-->
+      <div class="bao">
+      <div class="center">
+        <div class="right1">
+          <div id="demopage">
+            
+            <div id="slider3" class="slider">
+              <div class="conbox">
+                  <stl:contents channelindex="图片新闻" isimage="true" totalnum="5" order="AddDate">                             
+                    <div><stl:a><stl:content type="ImageUrl" width='300' height='212' border='0'></stl:content>
+                      <p><stl:content type="title" wordNum="15" ellipsis="..."></stl:content></p>
+                      </stl:a></div>
+                  </stl:contents>                       
+              </div>
+              <div class="switcher">
+                <a  class="cur">1</a>
+                <a >2</a>
+                <a >3</a>
+                <a >4</a>
+                <a >5</a>
+              </div>
+            </div>
+            </div>
+        </div>
+        
+    
+      <div class="details">
+        <div class="navs">
+          <!--要闻等导航-->
+                    
+        <ul style="margin-right: 7px;">
+          <li class="topaaa"><stl:a id="a1" class="ada" channelIndex="要闻" style="background: url({Stl.SiteUrl}/images/new_navbg1.png) no-repeat; color: #1964af;" onmouseover="aover1()">要闻</stl:a></li>
+          
+          <li class="topaaa"><stl:a id="a2" class="ada" channelIndex="工作动态" onmouseover="aover2()">工作动态</stl:a></li>
+          
+          <li class="topaaa"><stl:a id="a3" class="ada" channelIndex="媒体聚焦" onmouseover="aover3()">媒体聚焦</stl:a></li>
+          
+          <li class="topaaa"><stl:a id="a4" class="ada" channelIndex="专题精选" onmouseover="aover4()">专题精选</stl:a></li>
+          
+        </ul>
+        </div>
+        <div class="de" id="aa1" style="">
+          <ul>            
+            <stl:contents channelindex="要闻" totalnum="1" order="AddDate">                             
+                    <li><stl:a><stl:content type="title" wordNum="20" ellipsis="..."></stl:content>
+                      </stl:a><img src="{Stl.SiteUrl}/images/icon1.jpg" style="float: left;"/>
+              </li>
+                  </stl:contents> 
+           <stl:contents channelindex="要闻" totalnum="6" startnum="2"  order="AddDate">                             
+                    <li><stl:a><stl:content type="title" wordNum="20" ellipsis="..."></stl:content>
+                      </stl:a>
+              </li>
+                  </stl:contents>
+            <stl:a channelIndex="要闻" class="more">更多>></stl:a>
+            
+              <div class="floatclear"></div>
+            </a>
+          </ul>          
+          <div class="floatclear"></div>
+        </div>  
+        <div class="de" id="aa2" style="display: none;">
+          <ul>            
+            <stl:contents channelindex="工作动态" totalnum="1" order="AddDate">                             
+                    <li><stl:a><stl:content type="title" wordNum="20" ellipsis="..."></stl:content>
+                      </stl:a><img src="{Stl.SiteUrl}//images/icon1.jpg" style="float: left;"/>
+              </li>
+                  </stl:contents> 
+           <stl:contents channelindex="工作动态" totalnum="6" startnum="2"  order="AddDate">                             
+                    <li><stl:a><stl:content type="title" wordNum="20" ellipsis="..."></stl:content>
+                      </stl:a>
+              </li>
+                  </stl:contents>
+            <stl:a channelIndex="工作动态" class="more">更多>></stl:a>
+              <div class="floatclear"></div>
+            </a>
+          </ul>          
+          <div class="floatclear"></div>
+        </div>  
+        <div class="de" id="aa3" style="display: none;">
+          <ul>            
+            <stl:contents channelindex="媒体聚焦" totalnum="1" order="AddDate">                             
+                    <li><stl:a><stl:content type="title" wordNum="20" ellipsis="..."></stl:content>
+                      </stl:a><img src="{Stl.SiteUrl}/images/icon1.jpg" style="float: left;"/>
+              </li>
+                  </stl:contents> 
+           <stl:contents channelindex="媒体聚焦" totalnum="6" startnum="2"  order="AddDate">                             
+                    <li><stl:a><stl:content type="title" wordNum="20" ellipsis="..."></stl:content>
+                      </stl:a>
+              </li>
+                  </stl:contents>
+            <stl:a channelIndex="媒体聚焦" class="more">更多>></stl:a>
+              <div class="floatclear"></div>
+            </a>
+          </ul>          
+          <div class="floatclear"></div>
+        </div>  
+        <div class="de" id="aa4" style="display: none;">
+          <ul>            
+            <stl:contents channelindex="专题精选" totalnum="1" order="AddDate">                             
+                    <li><stl:a><stl:content type="title" wordNum="20" ellipsis="..."></stl:content>
+                      </stl:a><img src="{Stl.SiteUrl}/images/icon1.jpg" style="float: left;"/>
+              </li>
+                  </stl:contents> 
+           <stl:contents channelindex="专题精选" totalnum="6" startnum="2"  order="AddDate">                             
+                    <li><stl:a><stl:content type="title" wordNum="20" ellipsis="..."></stl:content>
+                      </stl:a>
+              </li>
+                  </stl:contents>
+            <stl:a channelIndex="专题精选" class="more">更多>></stl:a>
+              <div class="floatclear"></div>
+            </a>
+          </ul>          
+          <div class="floatclear"></div>
+        </div>  
+      </div>
+      <div class="floatclear"></div>
+      </div>
+      </div>
+      
+      <div class="left2">
+        <h2>走进东站</h2>
+        <div class="left2_center">
+          <ul>
+            <li>
+               <stl:a channelIndex="区域概况" class="more">区 域 概 况</stl:a>
+</li>
+            <li><stl:a channelIndex="网上东站" class="more">网 上 东 站</stl:a>
+</li>
+            <li><stl:a channelIndex="各界关怀" class="more">各 界 关 怀</stl:a>
+</li>
+             <li><stl:a channelIndex="枢纽简介" class="more">枢 纽 介 绍</stl:a>
+</li>
+             <li><stl:a channelIndex="大事记" class="more">大 事 记</stl:a>
+</li>
+          </ul>
+         
+                   
+          <div class="aaaa">
+           <stl:contents channelindex="走进东站" totalnum="1"  order="AddDate">
+                     <stl:a><stl:content type="content" isClearTags="true" wordNum="170" ellipsis="..."></stl:content></stl:a>                   
+                  </stl:contents> 
+          </div>
+         
+          
+          <div class="left2_img" id="abc123">
+            <stl:contents channelindex="走进东站" totalnum="1"  order="AddDate">                             
+                    <stl:a><stl:content type="ImageUrl" width='251' height='197'></stl:content></stl:a>  
+                  </stl:contents>
+          </div>
+          
+                    <div id="enlarge_images" style="">
+                       <script>
+                    var demo = document.getElementById("abc123");
+                    var gg = demo.getElementsByTagName("img");
+                    var ei = document.getElementById("enlarge_images");
+                    for(i=0; i<gg.length; i++){
+                    var ts = gg[i];
+                    ts.onmousemove = function(event){
+                    event = event || window.event;
+                    ei.style.display = "block";
+                    ei.style.position = "fixed";
+                    ei.style.zIndex="99999999999";
+                    ei.innerHTML = '<img src="' + this.src + '" />';
+                    ei.style.top =  event.clientY + 10 + "px";
+                    ei.style.left = document.body.scrollLeft + event.clientX + 10 + "px";
+                    }
+                    ts.onmouseout = function(){
+                    ei.innerHTML = "";
+                    ei.style.display = "none";
+                    }
+                    ts.onclick = function(){
+                    window.open( this.src );
+                    }
+                    }
+                    </script>
+                    </div>
+          
+          
+          <div class="floatclear"></div>
+        </div>
+      </div>
+      
+      <div class="leftbot" style="float:left;width:688px;height:351px;">
+      <div class="leftbot1">
+        <h2>
+          <strong><img src="{Stl.SiteUrl}/images/leftbotn1.png" style="float: left;"/></strong>
+          <span><stl:a channelIndex="区域管理">区域管理</stl:a><stl:a channelIndex="户外广告">户外广告</stl:a>
+          </span>
+        </h2>
+        
+        
+        <div class="bgs">
+        <div class="li">
+          <stl:contents channelname="综合管理" totalnum="1" scope="All"  order="AddDate">                             
+                    <stl:a><stl:content type="ImageUrl" width='128' height='109'></stl:content>
+                      </stl:a>
+                  </stl:contents>      
+        </div>
+        
+        <div class="des">
+          <h4><stl:contents channelname="综合管理" scope="All" totalnum="1" order="AddDate">                             
+                  <stl:a><stl:content type="title" wordNum="10" ellipsis="..."></stl:content></stl:a>
+                  </stl:contents></h4>
+          
+           <p> <stl:contents channelname="综合管理" scope="All" totalnum="1"  order="AddDate">                             
+                    <stl:a><stl:content type="content" isClearTags="true" wordNum="40" ellipsis="..."></stl:content>
+                      </stl:a>
+             </stl:contents>
+          </p>
+          </div>
+          <div class="floatclear"></div>
+          <div class="list">
+          <ul>
+             <stl:contents channelname="综合管理" scope="All" totalnum="7" startnum="2"  order="AddDate">                             
+                    <li><stl:a>>><stl:content type="title" wordNum="15" ellipsis="..."></stl:content>
+                      </stl:a><span><stl:content type="AddDate"  formatString="yyyy-MM-dd"></stl:content></span>
+              </li>
+                  </stl:contents>
+            
+          </ul>
+          </div>        
+        </div>  
+        <div class="floatclear"></div>
+      </div>
+         
+      <div class="leftbot2">
+        <h2>
+          <strong><img src="{Stl.SiteUrl}/images/leftbotn2.png" style="float: left;"/></strong><span><stl:a channelIndex="应急响应">应急响应</stl:a></span>
+        </h2>
+        
+        <div class="bgs">
+        <div class="li">
+           <stl:contents channelindex="应急响应"  totalnum="1"  order="AddDate">                             
+                    <stl:a><stl:content type="ImageUrl" width='128' height='109'></stl:content>
+                      </stl:a>
+                  </stl:contents>         
+        </div>
+        
+        <div class="des">
+          <h4><stl:contents channelindex="应急响应"  totalnum="1" order="AddDate">                             
+                  <stl:a><stl:content type="title" wordNum="10" ellipsis="..."></stl:content></stl:a>
+                  </stl:contents></h4>
+          
+          <p>  <stl:contents channelindex="应急响应"  totalnum="1"  order="AddDate">                             
+                    <stl:a><stl:content type="content" isClearTags="true" wordNum="40" ellipsis="..."></stl:content>
+                      </stl:a>
+                  </stl:contents>
+          </p>
+          </div>
+          <div class="floatclear"></div>
+          <div class="list">
+          <ul>
+            <stl:contents channelindex="应急响应"  totalnum="7" startnum="2"  order="AddDate">                             
+                    <li><stl:a>>><stl:content type="title" wordNum="15" ellipsis="..."></stl:content>
+                      </stl:a><span><stl:content type="AddDate"  formatString="yyyy-MM-dd"></stl:content></span>
+              </li>
+                  </stl:contents>
+            
+          </ul>
+          </div>  
+        </div>
+          <div class="floatclear"></div>
+        </div>  
+        </div>  
+       <div class="floatclear"></div>
+    </div>  
+    
+    <div id="main_right">
+      
+      <div class="notice">
+        <div class="no_nav">
+        <h3><strong style="=float: left;">通知公告</strong><stl:a channelIndex="通知公告">更多>></stl:a></h3>
+        </div>  
+      <div class="notice_de">
+        <div class="no_bg">
+          <ul>
+            <stl:contents channelindex="通知公告" totalnum="4"  order="AddDate">                             
+                    <li><stl:a><stl:content type="title" wordNum="15" ellipsis="..."></stl:content>
+                      </stl:a></li>
+                  </stl:contents>
+           </ul>
+        </div>
+      </div>
+      </div>
+      
+      <div class="right2">
+        <stl:a channelIndex="网上东站"><img src="{Stl.SiteUrl}/images/right2_title.png" width="170px" height="68px" /></stl:a>
+        <div class="floatclear"></div>
+      </div>
+      
+        <div class="right3">
+        <div class="right3_bg">
+        <div class="navs">
+          <script type="text/javascript" src="{Stl.SiteUrl}/js/jquery-1.4.2.min.js"></script>
+          
+          <ul>
+            <li class="navaaa"><stl:a id="b1" class="ada" channelIndex="东站视频" style="background: url({Stl.SiteUrl}/images/right3_navbg1.png) no-repeat; color: #1964af;"onmouseover="bover1()">东站视频</stl:a></li>
+            <li class="navaaa"><stl:a id="b2" class="ada" channelIndex="宣传册" style="background: url({Stl.SiteUrl}/images/right3_navbg2.png) no-repeat; color: #fff;" onmouseover="bover2()">宣传册</stl:a></li>
+            <li class="navaaa"><stl:a id="b3" class="ada" channelIndex="东站商务报" style="background: url({Stl.SiteUrl}/images/right3_navbg2.png) no-repeat; color: #fff;" onmouseover="bover3()">枢纽之声</stl:a></li>
+          </ul>
+          <div class="floatclear"></div>
+        </div>  
+        <div class="right3_detils" style="width:266px ; height:150px ;position: relative;">
+        <div class="img_bg" id="bb1" style="">
+          <stl:contents channelindex="东站视频"  totalnum="1"  order="AddDate">                             
+                    <stl:a><stl:content type="ImageUrl" width='250' height='135'></stl:content>
+                      </stl:a>
+                  </stl:contents> 
+          <div class="floatclear"></div>
+        </div>
+        
+        <div class="img_bg" id="bb2" style="display: none;">
+          <stl:contents channelindex="宣传册"  totalnum="1"  order="AddDate">                             
+                    <stl:a><stl:content type="ImageUrl" width='250' height='135'></stl:content>
+                      </stl:a>
+                  </stl:contents> 
+          <div class="floatclear"></div>
+        </div>
+
+
+        <div class="img_bg" id="bb3" style="display: none;">
+         <stl:contents channelindex="东站商务报"  totalnum="1"  order="AddDate">                             
+                    <stl:a target="_blank"><stl:content type="ImageUrl" width='250' height='135'></stl:content>
+                      </stl:a>
+                  </stl:contents> 
+          <div class="floatclear"></div>
+        </div>
+        </div>
+        </div>
+      </div>
+      
+      <div class="right4">
+        
+        <div class="ti">      
+          <h2><strong style="=float: left;">专题报道</strong><stl:a channelIndex="专题报道">更多》</stl:a></h2>
+        </div>
+        <div class="bg4">
+        <div class="bg4_bg">
+          <ul style="align-content: center;">
+            <stl:contents channelindex="专题报道" isimage="true" totalnum="2"  order="AddDate">                             
+                    <li><stl:a><stl:content type="ImageUrl" width='116' height='57'></stl:content></li>
+                      </stl:a>
+                  </stl:contents>
+          <div class="floatclear"></div>
+          </ul>
+        </div>
+        
+        <div class="ti"> 
+          <h2><strong style="=float: left;">咨询服务中心</strong><stl:a channelIndex="咨询服务中心">更多》</stl:a></h2>
+        </div>
+        <div class="bg4_bg">
+          <ul>
+           <stl:contents channelindex="咨询服务中心" isimage="true" totalnum="2"  order="AddDate">                             
+                    <li><stl:a><stl:content type="ImageUrl" width='116' height='57'></stl:content></li>
+                      </stl:a>
+                  </stl:contents>
+          </ul>
+        </div>
+        <div class="floatclear"></div>
+      </div>
+      
+      </div>
+<!--官方微博-->
+      <div class="right5">
+          <div class="left-pro">
+          <div class="t1">
+            <img src="{Stl.SiteUrl}/../../images/gotop.png" id="gotop" />
+            <h3><a>官<br />方<br />微<br />博</a></h3>
+      <div id="showArea">
+              <ul>
+                <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=5228608322&verifier=006ff023&dpc=1"></iframe>
+                </ul>                
+      </div>
+            <img src="{Stl.SiteUrl}/../../images/gobottom.png" id="gobottom"  />
+    </div>
+    <div class="t2" style="display:none;">
+    <a href="{Stl.SiteUrl}/images/img01.jpg" id="zoom1" class="MagicZoom MagicThumb"><img src="" id="main_img" class="main_img" style="width:400px; height:400px;" /></a>
+    </div>
+  </div>
+</div>
+<div style="clear:both;"></div>
+
+
+                  </div>    
+    
+    <div class="floatclear"></div>
+    </div>
+    <div class=" floatclear"></div>
+    
+  <!--专题聚焦-->
+      <div class="topics">
+      <div class="topics_title"><img src="{Stl.SiteUrl}/images/spotlight.png" width="34" height="149" /></div>
+      <div class="ind_con7">
+          <div id="MarqueeDiv1" style="overflow: hidden; height: 140px;margin-left:22px; white-space: nowrap;">
+            <table width="900" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+              <tr>
+                 <stl:contents channelindex="专题聚焦" isimage="true" totalnum="6"  order="AddDate">                             
+                   <td width="172"> <stl:a><stl:content type="ImageUrl" width='158' height='107' border='0'></stl:content>
+                      </stl:a><br /><stl:a><stl:content type="title" wordNum="8" ellipsis="..."></stl:content></a></td>
+                  </stl:contents> 
+              </tr>
+            </table>
+          </div>          
+          <script type="text/javascript">
+        /*********箭头控制滚动方向、加速及鼠标拖动***************/
+        /*********箭头控制滚动方向、加速及鼠标拖动***************/
+        var MarqueeDiv1Control=new Marquee("MarqueeDiv1");    //箭头控制滚动方向、加速及鼠标拖动实例
+        MarqueeDiv1Control.Direction="left";
+        MarqueeDiv1Control.Step=1;        //每次移动的px
+        MarqueeDiv1Control.Width=900;
+        MarqueeDiv1Control.Height=140;
+        MarqueeDiv1Control.Timer=20;      //每次移动的间隔时间
+        MarqueeDiv1Control.ScrollStep=1;    //若为-1则禁止鼠标控制实例
+        MarqueeDiv1Control.Start();
+        MarqueeDiv1Control.BakStep=MarqueeDiv1Control.Step;
+        $("LeftButton1").onmouseover=function(){MarqueeDiv1Control.Direction=2};
+        $("LeftButton1").onmouseout=$("LeftButton1").onmouseup=function(){MarqueeDiv1Control.Step=MarqueeDiv1Control.BakStep};
+        $("LeftButton1").onmousedown=$("RightButton1").onmousedown=function(){MarqueeDiv1Control.Step=MarqueeDiv1Control.BakStep+3};
+        $("RightButton1").onmouseover=function(){MarqueeDiv1Control.Direction=3};
+        $("RightButton1").onmouseout=$("RightButton1").onmouseup=function(){MarqueeDiv1Control.Step=MarqueeDiv1Control.BakStep};
+        </script> 
+        </div>
+    </div>  
+         <div id="footer">  <div class="footer_text">
+      <p>All rights Reserved. 杭州东站枢纽管理委员会  版权所有</p>
+        <p>地址：浙江省杭州市江干区环站北路999号     电话：0571-56669927</p>
+        <p>传真：0571-56669927     邮箱：dongzhanshuniu@163.com</p>
+    </div>
+    <div class="footer_img">
+      <a class="qr_code"><img src="{Stl.SiteUrl}/images/QR_code.jpg" width="76" height="76" /></a>
+        <dl>
+          <dt class="dt1"><img src="{Stl.SiteUrl}/images/ico_ba.gif" width="38" height="43" /></dt>
+            <dd>沪ICP备 21122121号</dd>
+        </dl>
+        <dl>
+          <dt class="dt2"><stl:a channelIndex="留言管理"><img src="{Stl.SiteUrl}/images/ico_email.gif" width="54" height="33" /></stl:a></dt>
+            <dd><stl:a channelIndex="留言管理">联系我们</stl:a></dd>
+        </dl>
+   <stl:include file="@/include/footer.htm"></stl:include> 
+<script type="text/javascript" src="{Stl.SiteUrl}/js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="{Stl.SiteUrl}/js/lrtk.js"></script>
+
+<script type="text/javascript" src="{Stl.SiteUrl}/js/jquery.Xslider.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+  // 焦点图片水平滚动
+  $("#slider1").Xslider({
+    // 默认配置
+    affect: 'scrollx', //效果  有scrollx|scrolly|fade|none
+    speed: 800, //动画速度
+    space: 6000, //时间间隔
+    auto: true, //自动滚动
+    trigger: 'mouseover', //触发事件 注意用mouseover代替hover
+    conbox: '.conbox', //内容容器id或class
+    ctag: 'div', //内容标签 默认为<a>
+    switcher: '.switcher', //切换触发器id或class
+    stag: 'a', //切换器标签 默认为a
+    current:'cur', //当前切换器样式名称
+    rand:false //是否随机指定默认幻灯图片
+  });
+  
+  // 焦点图片垂直滚动
+  $("#slider2").Xslider({
+    affect:'scrolly',
+    ctag: 'div',
+    speed:400
+  });
+  
+  // 焦点图片淡隐淡现
+  $("#slider3").Xslider({
+    affect:'fade',
+    ctag: 'div'
+  });
+  
+  // 选项卡
+  $("#slider4").Xslider({
+    affect:'none',
+    ctag: 'div',
+    speed:10
+  });
+  
+  
+});
+</script>
+
+
+<!--[if IE 6]>
+<script src="{Stl.SiteUrl}/js/DD_belatedPNG_0.0.8a.js"></script>
+<script>
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+  </body>
+</html>
+​

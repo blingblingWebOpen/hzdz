@@ -1,0 +1,24 @@
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0}
+ul,ol,li{list-style:none}
+input,button{margin:0;font-size:12px;vertical-align:middle}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif; text-align:center;margin:0 auto}
+table{border-collapse:collapse;border-spacing:0}
+a{color:#333;text-decoration:none}
+a:hover{color:#ef9b11;text-decoration:underline}
+
+.left-pro{width:271px; height:135px; border:1px solid #2a75b3; position:relative; background:#addef8; padding:5px; text-align:left;float:left}
+.left-pro .t1{ background:#fff; width:230px;float:left;}
+.left-pro .t2{width:352px;text-indent:0;float:left;padding-left:10px}
+.left-pro .t2 img{text-indent:0;}
+#showArea img{cursor:pointer;display:block;margin-bottom:5px;width:68px;padding:1px;border:1px solid #ccc;height:68px;float:left}
+#main_img{cursor:pointer;display:block}
+#gotop{cursor:pointer;display:block; position:absolute; right:18px; top:14px;}
+#gobottom{cursor:pointer;display:block; position:absolute; right:18px; bottom:14px;}
+#showArea{height:230px; height:135px; overflow:hidden;}
+#showArea ul{ width:230px;}
+#showArea ul li{ width:230px; height:135px;}
+#showArea ul li a{}
+.left-pro .t1 h3{ position:absolute; right:0; top:20px; width:45px; height:94px; text-align:center; line-height:20px; padding-top:10px;}
+
+
